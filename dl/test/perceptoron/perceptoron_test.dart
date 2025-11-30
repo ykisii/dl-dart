@@ -38,4 +38,16 @@ void main() {
   test('OR true, true', () {
     expect(or(1, 1), 1);
   });
+  test('XOR false, false', () {
+    expect(xor(0, 0), 0);
+  });
+  test('XOR false, true', () {
+    expect(xor(0, 1), 1);
+  });
+  test('XOR true, false', () {
+    expect(xor(1, 0), 1);
+  });
+  test('XOR true, true', () {
+    expect(xor(1, 1), 0);
+  });
 }

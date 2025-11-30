@@ -23,3 +23,9 @@ int or(double x1, double x2) {
   final ret = arraySum(x * w) + b;
   return ret <= 0 ? 0 : 1;
 }
+
+int xor(double x1, double x2) {
+  final s1 = nand(x1, x2);
+  final s2 = or(x1, x2);
+  return and(s1.toDouble(), s2.toDouble());
+}
