@@ -4,7 +4,7 @@ class Darray {
       _list = List.empty(growable: true);
     }
     else {
-    _list = list.toList();
+      _list = list.toList();
     }
   }
 
@@ -18,7 +18,22 @@ class Darray {
     for (double i = start; i <= stop; i += step) {
       data.add(i);
     }
-    List<dynamic> d = data.toList();
-    return Darray(d);
+    return Darray(data.toList());
+  }
+
+  Darray operator >(double num) {
+    return Darray(_list.map((v) => v > num).toList());
+  }
+
+  Darray operator <(double num) {
+    return Darray(_list.map((v) => v < num).toList());
+  }
+
+  Darray operator >=(double num) {
+    return Darray(_list.map((v) => v >= num).toList());
+  }
+
+  Darray operator <=(double num) {
+    return Darray(_list.map((v) => v <= num).toList());
   }
 }
