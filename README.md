@@ -1,2 +1,2 @@
 # dl-dart
-step by step dl
+Deep Learning with Dart (step by step)
