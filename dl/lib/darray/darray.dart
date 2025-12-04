@@ -36,4 +36,8 @@ class Darray {
   Darray operator <=(double num) {
     return Darray(_list.map((v) => v <= num).toList());
   }
+
+  Darray operator +(double num) {
+    return Darray(_list.map((v) => v + num).toList());
+  }  
 }

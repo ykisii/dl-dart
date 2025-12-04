@@ -7,6 +7,15 @@ test('darray arrange', () {
   final da = Darray.arrange(start: 5.0, stop:10.0, step: 1);
   expect(da.length, 6);
   });
+test('darray +', () {
+  final x = Darray([-1, 0, 1, 2]);
+  final y = x + 1;
+  expect(y.list[0], 0);
+  expect(y.list[1], 1);
+  expect(y.list[2], 2);
+  expect(y.list[3], 3);
+  });
+
 test('darray <', () {
   final x = Darray([-1, 0, 1, 1]);
   final y = x < 0;
