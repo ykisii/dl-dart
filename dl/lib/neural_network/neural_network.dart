@@ -1,6 +1,5 @@
-import 'package:dl/darray/darray.dart';
-import 'package:dl/darray/darray_transforms.dart';
+import 'package:scidart/numdart.dart';
 
-Darray stepFunction(Darray x) {
-  return (x > 0).boolToNum();
+Array stepFunction(Array x) {
+  return Array(arrayIsLessThan(x, 0).map((v)=> v ? 1.0 : 0.0).toList());
 }
