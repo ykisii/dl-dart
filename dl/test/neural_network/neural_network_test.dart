@@ -1,4 +1,3 @@
-import 'package:dl/darray/darray.dart';
 import 'package:dl/neural_network/neural_network.dart';
 import 'package:scidart/numdart.dart';
 import 'package:test/test.dart';

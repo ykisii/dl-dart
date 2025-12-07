@@ -9,7 +9,8 @@ environment:
 # Add regular dependencies here.
 dependencies:
   path: ^1.9.0
-  scidart: ^0.0.2-dev.12
+  scidart: 
+    path: ../scidart
 
 dev_dependencies:
   lints: ^6.0.0
