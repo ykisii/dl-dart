@@ -44,5 +44,13 @@ class Darray {
     else {
       throw ArgumentError('Unsupported operand type');
     }
-  }  
+  }
+  Darray operator /(dynamic other) {
+    if (other is num) {
+      return Darray(_list.map((v) => v / other).toList());
+    }
+    else {
+      throw ArgumentError('Unsupported operand type');
+    }
+  }    
 }

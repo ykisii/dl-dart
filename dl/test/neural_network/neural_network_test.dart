@@ -14,4 +14,12 @@ test('step_function', () {
   expect(y.elementAt(4), 0);
   expect(y.elementAt(5), 0);
   });
+test('sigmoid', () {
+  final x = Array([-1.0, 1.0, 2.0]);
+  //[-3, -2, -1, 0, 1, 2, 3]
+  final y = sigmoid(x);
+  expect(y.elementAt(0), 0.26894142);
+  expect(y.elementAt(1), 0.73105858);
+  expect(y.elementAt(2), 0.88079708);
+  });  
 }
