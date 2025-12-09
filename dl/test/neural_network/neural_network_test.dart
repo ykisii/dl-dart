@@ -16,10 +16,9 @@ test('step_function', () {
   });
 test('sigmoid', () {
   final x = Array([-1.0, 1.0, 2.0]);
-  //[-3, -2, -1, 0, 1, 2, 3]
   final y = sigmoid(x);
-  expect(y.elementAt(0), 0.26894142);
-  expect(y.elementAt(1), 0.73105858);
-  expect(y.elementAt(2), 0.88079708);
+  expect(y.elementAt(0), 0.2689414213699951);
+  expect(y.elementAt(1), 0.7310585786300049);
+  expect(y.elementAt(2), 0.8807970779778823);
   });  
 }
