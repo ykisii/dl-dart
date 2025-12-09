@@ -7,3 +7,9 @@ Array stepFunction(Array x) {
 Array sigmoid(Array x) {
   return ones(x.length) / arrayAddToScalar(arrayExp(x, isNegative: true), 1.0);
 }
+/* relu(1) => 1
+   relu(-1) => 0
+*/
+double relu(double x) {
+  return max(0, x);
+}

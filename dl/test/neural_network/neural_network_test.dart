@@ -21,4 +21,11 @@ test('sigmoid', () {
   expect(y.elementAt(1), 0.7310585786300049);
   expect(y.elementAt(2), 0.8807970779778823);
   });  
+test('relu', () {
+  expect(relu(1), 1);
+  expect(relu(0), 0);
+  expect(relu(0.1), 0.1);
+  expect(relu(-0.1), 0);
+  expect(relu(-1), 0);
+  });  
 }
